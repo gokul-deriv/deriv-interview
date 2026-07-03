@@ -13,7 +13,7 @@ This submission stays intentionally lightweight and self-contained. It uses Mark
 - Markdown + Mermaid
 
 It now also includes a runnable local warehouse implementation backed by SQLite and raw source files under `data/`.
-There is no git repository initialized inside this folder right now, but a local [.gitignore](/Users/gokulsubramanian/nrs/git/regentmarkets/deriv-interview-gokul/.gitignore) is in place so raw source data, generated warehouse artifacts, and common secret file types stay out of version control if you initialize git later.
+The project is initialized as a local git repository, and [.gitignore](/Users/gokulsubramanian/nrs/git/regentmarkets/deriv-interview-gokul/.gitignore) keeps raw source data, generated warehouse artifacts, and common secret file types out of version control.
 
 ## Deliverables
 

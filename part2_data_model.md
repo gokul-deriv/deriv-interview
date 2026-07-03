@@ -266,3 +266,13 @@ Current scope boundary:
 - `total_withdrawals` is intentionally not included because no withdrawal source exists in the supplied data scope
 
 The SQLite-compatible implementation for this model is in `sql/client_activity.sql`.
+
+## Part 2c: Query A
+
+The deposit-count-by-country query is implemented in `sql/query_a_deposit_count_by_country.sql`.
+
+Validation-critical behavior:
+
+- it uses a `LEFT JOIN` from clients to deposits
+- it counts only completed deposits
+- countries with zero deposits are retained in the result instead of being filtered out by an `INNER JOIN`

@@ -1,4 +1,4 @@
-# deriv-interview-gokul
+# deriv-interview
 
 Local-only interview submission for a compact analytics warehouse design built around four layers:
 
@@ -13,7 +13,7 @@ This submission stays intentionally lightweight and self-contained. It uses Mark
 - Markdown + Mermaid
 
 It now also includes a runnable local warehouse implementation backed by SQLite and raw source files under `data/`.
-The project is initialized as a local git repository, and [.gitignore](/Users/gokulsubramanian/nrs/git/regentmarkets/deriv-interview-gokul/.gitignore) keeps raw source data, generated warehouse artifacts, and common secret file types out of version control.
+The project is initialized as a local git repository for GitHub repo `gokul-deriv/deriv-interview`, and [.gitignore](/Users/gokulsubramanian/nrs/git/regentmarkets/deriv-interview-gokul/.gitignore) keeps raw source data, generated warehouse artifacts, and common secret file types out of version control.
 
 ## Deliverables
 
@@ -40,7 +40,7 @@ The project is initialized as a local git repository, and [.gitignore](/Users/go
 ## Directory layout
 
 ```text
-deriv-interview-gokul/
+deriv-interview/
 |-- README.md
 |-- data/
 |   |-- client_signup.json
@@ -69,7 +69,7 @@ deriv-interview-gokul/
 
 ## Run The Pipeline
 
-From `deriv-interview-gokul`:
+From the project root:
 
 ```bash
 python3 warehouse/pipelines/run_pipeline.py
@@ -89,7 +89,7 @@ Silver and all downstream layers keep masked or derived PII only. Raw PII stays 
 
 ## Quick SQL Validation
 
-From `deriv-interview-gokul`:
+From the project root:
 
 ```bash
 chmod +x scripts/validate_sqlite.sh

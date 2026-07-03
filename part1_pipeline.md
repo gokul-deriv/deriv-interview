@@ -228,48 +228,32 @@ Trade-off:
 | Financial validity | deposits | `amount_usd`, `fee_usd`, `processing_days`, `status` | Impossible values such as negative completed deposit amount | `critical` | Quarantine the row and exclude it from gold facts |
 | PII plausibility | profile data | `date_of_birth` | Implausible date such as year `1888` | `warning` | Load with an anomaly flag for stewardship review |
 
-## Concrete edge cases
+## Part 1a: Five concrete edge cases
 
-### Vendor schema drift
+### 1. Vendor schema drift
 
-- `payment_method` is renamed to `method` in one vendor file.
-- Silver uses an alias-mapping registry and logs the event as schema drift.
+- `payment_method` is renamed to `method` in one vendor file, and one baseline deposit row uses `credit_card` instead of `payment_method`.
+- Handle it in silver with an alias-mapping registry, normalize to `payment_method`, and log the anomaly as a warning.
 
-### Duplicate deposits across files
+### 2. Duplicate deposits across files
 
 - `VDEP002` and `VDEP005` reappear in later deliveries.
-- Deduplicate by `deposit_id` while still preserving file-delivery audit history in bronze and manifest tables.
+- Deduplicate by `deposit_id`, keep the first valid occurrence, quarantine duplicates, and preserve file-delivery lineage in bronze and manifest tables.
 
-### Late-arriving vendor data
+### 3. Late-arriving vendor data
 
-- `deposits_vendor_20240303.csv` arrives late but contains older `deposit_date` values.
-- Reconcile by business date and pick it up through the rolling backfill window.
+- `deposits_vendor_20240303.csv` arrives later but contains older `deposit_date` values.
+- Reconcile by business date rather than filename date and use a rolling lookback window so the late file is picked up automatically.
 
-### Orphan client references
+### 4. Orphan client references
 
-- `CL099` appears in the vendor feed.
-- `CL031` appears in `client_deposit.json`.
-- Quarantine unresolved facts and surface them in reconciliation output.
+- `CL099` appears in the vendor feed and `CL031` appears in `client_deposit.json` without a matching client master row.
+- Quarantine unresolved rows, optionally create a short-lived inferred member during the SLA window, and alert if the client record never arrives.
 
-### Invalid financial row
+### 5. Invalid financial row
 
 - `VDEP001` is a negative completed deposit.
-- Treat it as invalid and quarantine it unless the source later proves it is a supported reversal pattern.
-
-### Baseline schema anomaly
-
-- One row in `client_deposit.json` uses `credit_card` instead of `payment_method`.
-- Normalize it in silver and log the anomaly.
-
-### CDC arrival-order issue
-
-- CDC lines are not sorted by `lsn`.
-- Sort and apply strictly by `lsn` before gold historization.
-
-### CDC baseline overlap
-
-- CDC contains an `insert` for `CL030` even though the bootstrap snapshot already includes `CL030`.
-- Treat it as a bootstrap overlap and reconcile by business key upsert rules instead of raising a hard duplicate error.
+- Treat it as invalid, quarantine it, exclude it from gold facts, and only reclassify it if the upstream business rule explicitly proves it is a supported reversal pattern.
 
 ## Recommended stage order
 

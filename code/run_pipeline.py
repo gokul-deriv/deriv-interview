@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import Any
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = PROJECT_ROOT / "data"
 WAREHOUSE_DIR = PROJECT_ROOT / "warehouse"
 DB_PATH = WAREHOUSE_DIR / "warehouse.db"

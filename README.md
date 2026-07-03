@@ -21,10 +21,10 @@ The sample source files and exported layer CSVs in this repo are intentionally v
 - `part1_pipeline.md`: pipeline architecture, orchestration, monitoring, data quality, and edge cases
 - `part2_data_model.md`: Kimball-style gold model, historization strategy, and curated model design
 - `part3_pii.md`: PII masking and local access-control approach
+- `code/`: runnable prototype scripts
 - `sql/client_activity.sql`: SQLite-compatible curated model
 - `sql/query_a_deposit_count_by_country.sql`: SQLite-compatible answer for Query A
 - `sql/query_a_fixture.sql`: local fixture used to validate the SQL
-- `scripts/validate_sqlite.sh`: local validation script
 - `data/`: raw baseline JSON, vendor CSV, and CDC JSONL inputs
 - `warehouse/`: runnable pipeline, persistent SQLite warehouse, and exported layer outputs
 - `.gitignore`: keeps the SQLite database, caches, and common secret file types out of version control
@@ -43,6 +43,10 @@ The sample source files and exported layer CSVs in this repo are intentionally v
 ```text
 deriv-interview/
 |-- README.md
+|-- code/
+|   |-- README.md
+|   |-- run_pipeline.py
+|   `-- validate_sqlite.sh
 |-- data/
 |   |-- client_signup.json
 |   |-- client_profile.json
@@ -56,24 +60,27 @@ deriv-interview/
 |-- part2_data_model.md
 |-- part3_pii.md
 |-- PROMPTS.md
-|-- scripts/
-|   `-- validate_sqlite.sh
 |-- warehouse/
 |   |-- README.md
-|   `-- pipelines/
-|       `-- run_pipeline.py
+|   |-- bronze/
+|   |-- silver/
+|   |-- gold/
+|   |-- curated/
+|   `-- ops/
 `-- sql/
     |-- client_activity.sql
     |-- query_a_deposit_count_by_country.sql
     `-- query_a_fixture.sql
 ```
 
+The deliverable-required structure is the top-level Markdown files plus `sql/`, `code/`, and `PROMPTS.md`. The `data/` and `warehouse/` folders are supporting assets added so the submission is reproducible and runnable locally.
+
 ## Run The Pipeline
 
 From the project root:
 
 ```bash
-python3 warehouse/pipelines/run_pipeline.py
+python3 code/run_pipeline.py
 ```
 
 This materializes:
@@ -94,8 +101,8 @@ The `data/` and bronze files in this repo are sample interview fixtures and are 
 From the project root:
 
 ```bash
-chmod +x scripts/validate_sqlite.sh
-./scripts/validate_sqlite.sh
+chmod +x code/validate_sqlite.sh
+./code/validate_sqlite.sh
 ```
 
 The validation script:

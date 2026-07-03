@@ -4,21 +4,21 @@ This folder contains the runnable local warehouse implementation.
 
 ## Layout
 
-- `pipelines/run_pipeline.py`: end-to-end local runner
+- `../code/run_pipeline.py`: end-to-end local runner
 - `warehouse.db`: persistent SQLite warehouse database created on first run
 - `bronze/`: exported bronze raw replicas named after the source files
 - `silver/`: exported silver tables and quarantine output
 - `gold/`: exported gold dimensions and facts
 - `curated/`: exported curated analytics tables
 - `ops/`: exported pipeline runs, stage runs, DQ failures, and manifest tables
-- `.gitignore` at the project root excludes raw inputs, generated exports, `warehouse.db`, and common secret file types from git
+- `.gitignore` at the project root excludes `warehouse.db`, cache artifacts, and common secret file types from git
 
 ## Run
 
 From the project root:
 
 ```bash
-python3 warehouse/pipelines/run_pipeline.py
+python3 code/run_pipeline.py
 ```
 
 This will:

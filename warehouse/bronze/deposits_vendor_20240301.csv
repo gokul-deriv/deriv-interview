@@ -1,0 +1,5 @@
+deposit_id,client_id,deposit_date,amount_usd,fee_usd,payment_method,method,processing_days,status,source_system,source_file_name,source_file_sha256,load_timestamp,row_number
+VDEP001,CL007,2024-03-01,-150.00,2.50,bank_transfer,,1,completed,vendor_deposit,deposits_vendor_20240301.csv,798a836d1f4519cf49238d1fe8e5151792a3d3ab811b8b54144bd60f286df393,2026-07-03T07:15:28Z,1
+VDEP002,CL008,2024-03-01,220.00,3.20,credit_card,,2,completed,vendor_deposit,deposits_vendor_20240301.csv,798a836d1f4519cf49238d1fe8e5151792a3d3ab811b8b54144bd60f286df393,2026-07-03T07:15:28Z,2
+VDEP003,CL099,2024-03-01,180.00,2.80,ewallet,,1,completed,vendor_deposit,deposits_vendor_20240301.csv,798a836d1f4519cf49238d1fe8e5151792a3d3ab811b8b54144bd60f286df393,2026-07-03T07:15:28Z,3
+VDEP004,CL010,2024-03-01,90.00,1.50,bank_transfer,,3,pending,vendor_deposit,deposits_vendor_20240301.csv,798a836d1f4519cf49238d1fe8e5151792a3d3ab811b8b54144bd60f286df393,2026-07-03T07:15:28Z,4

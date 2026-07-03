@@ -1,0 +1,62 @@
+[
+    {
+        "deposit_id": "DEP001",
+        "client_id": "CL001",
+        "deposit_date": "2024-01-06",
+        "amount_usd": 100.0,
+        "fee_usd": 2.5,
+        "payment_method": "bank_transfer",
+        "processing_days": 1,
+        "status": "completed"
+    },
+    {
+        "deposit_id": "DEP002",
+        "client_id": "CL002",
+        "deposit_date": "2024-01-10",
+        "amount_usd": 250.0,
+        "fee_usd": 3.5,
+        "payment_method": "credit_card",
+        "processing_days": 1,
+        "status": "completed"
+    },
+    {
+        "deposit_id": "DEP003",
+        "client_id": "CL005",
+        "deposit_date": "2024-01-25",
+        "amount_usd": 500.0,
+        "fee_usd": 6.0,
+        "payment_method": "bank_transfer",
+        "processing_days": 2,
+        "status": "completed"
+    },
+    {
+        "deposit_id": "DEP004",
+        "client_id": "CL014",
+        "deposit_date": "2024-03-02",
+        "amount_usd": 300.0,
+        "fee_usd": 4.0,
+        "credit_card": "credit_card",
+        "processing_days": 1,
+        "status": "completed"
+    },
+    {
+        "deposit_id": "DEP005",
+        "client_id": "CL018",
+        "deposit_date": "2024-03-29",
+        "amount_usd": 180.0,
+        "fee_usd": 2.0,
+        "payment_method": "ewallet",
+        "processing_days": 1,
+        "status": "completed"
+    },
+    {
+        "deposit_id": "DEP006",
+        "client_id": "CL031",
+        "deposit_date": "2024-02-02",
+        "amount_usd": 120.0,
+        "fee_usd": 1.5,
+        "payment_method": "bank_transfer",
+        "processing_days": 2,
+        "status": "completed"
+    }
+]

@@ -1,0 +1,5 @@
+deposit_id,client_id,deposit_date,amount_usd,fee_usd,payment_method,processing_days,status
+VDEP001,CL007,2024-03-01,-150.00,2.50,bank_transfer,1,completed
+VDEP002,CL008,2024-03-01,220.00,3.20,credit_card,2,completed
+VDEP003,CL099,2024-03-01,180.00,2.80,ewallet,1,completed
+VDEP004,CL010,2024-03-01,90.00,1.50,bank_transfer,3,pending

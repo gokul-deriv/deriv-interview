@@ -1,0 +1,13 @@
+client_id,full_name,date_of_birth,phone_number,risk_category,account_status,account_balance_usd,last_login_at,source_system,source_file_name,source_file_sha256,load_timestamp,row_number
+CL001,Aisha Tan,1992-04-11,+60111234567,low,active,125.4,2024-03-01T08:15:00Z,baseline_profile,client_profile.json,fc3caf85c76ba3730da3c5d17ff96f62b612b4e2a39f15ff990f1930af52e1b1,2026-07-03T07:15:28Z,1
+CL002,James Lim,1987-09-22,+6589123456,medium,active,420.0,2024-03-02T09:10:00Z,baseline_profile,client_profile.json,fc3caf85c76ba3730da3c5d17ff96f62b612b4e2a39f15ff990f1930af52e1b1,2026-07-03T07:15:28Z,2
+CL003,Somchai K,1994-02-12,+66812345678,medium,dormant,32.15,2024-03-01T21:45:00Z,baseline_profile,client_profile.json,fc3caf85c76ba3730da3c5d17ff96f62b612b4e2a39f15ff990f1930af52e1b1,2026-07-03T07:15:28Z,3
+CL005,Khalid M,1985-06-30,+971501234567,high,active,780.0,2024-03-04T10:05:00Z,baseline_profile,client_profile.json,fc3caf85c76ba3730da3c5d17ff96f62b612b4e2a39f15ff990f1930af52e1b1,2026-07-03T07:15:28Z,4
+CL007,Emeka O,1991-01-17,+2348012345678,low,active,0.0,2024-03-15T14:25:00Z,baseline_profile,client_profile.json,fc3caf85c76ba3730da3c5d17ff96f62b612b4e2a39f15ff990f1930af52e1b1,2026-07-03T07:15:28Z,5
+CL010,Lucas F,1990-07-15,+5511987654321,medium,active,44.5,2024-03-16T07:15:00Z,baseline_profile,client_profile.json,fc3caf85c76ba3730da3c5d17ff96f62b612b4e2a39f15ff990f1930af52e1b1,2026-07-03T07:15:28Z,6
+CL012,David T,1888-11-03,+6598765432,high,restricted,0.0,2024-03-03T17:40:00Z,baseline_profile,client_profile.json,fc3caf85c76ba3730da3c5d17ff96f62b612b4e2a39f15ff990f1930af52e1b1,2026-07-03T07:15:28Z,7
+CL014,Farah A,1993-03-14,+60129876543,low,active,310.0,2024-03-08T12:00:00Z,baseline_profile,client_profile.json,fc3caf85c76ba3730da3c5d17ff96f62b612b4e2a39f15ff990f1930af52e1b1,2026-07-03T07:15:28Z,8
+CL018,Rahul G,1995-12-20,+919876543210,medium,active,115.75,2024-03-25T18:20:00Z,baseline_profile,client_profile.json,fc3caf85c76ba3730da3c5d17ff96f62b612b4e2a39f15ff990f1930af52e1b1,2026-07-03T07:15:28Z,9
+CL020,Hans M,1988-05-05,+4917612345678,low,active,515.2,2024-04-10T06:35:00Z,baseline_profile,client_profile.json,fc3caf85c76ba3730da3c5d17ff96f62b612b4e2a39f15ff990f1930af52e1b1,2026-07-03T07:15:28Z,10
+CL026,Andi P,1997-08-18,+6281234567890,medium,pending_review,18.0,2024-05-16T08:55:00Z,baseline_profile,client_profile.json,fc3caf85c76ba3730da3c5d17ff96f62b612b4e2a39f15ff990f1930af52e1b1,2026-07-03T07:15:28Z,11
+CL030,Nurul H,1992-10-09,+60137654321,medium,active,0.0,2024-06-12T07:05:00Z,baseline_profile,client_profile.json,fc3caf85c76ba3730da3c5d17ff96f62b612b4e2a39f15ff990f1930af52e1b1,2026-07-03T07:15:28Z,12

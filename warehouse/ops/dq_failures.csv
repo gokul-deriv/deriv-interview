@@ -1,0 +1,61 @@
+dq_failure_id,run_id,stage_name,dq_check,severity,source_file_name,business_key,details,detected_at
+1,84f3a6fc-fd2f-435a-be40-9ec57c48d2ef,silver,PII plausibility,warning,client_profile.json,CL012,Implausible date_of_birth detected for CL012: 1888-11-03,2026-07-03T07:06:50Z
+2,84f3a6fc-fd2f-435a-be40-9ec57c48d2ef,silver,Baseline schema anomaly,warning,client_deposit.json,DEP004,Mapped credit_card to payment_method for deposit DEP004.,2026-07-03T07:06:50Z
+3,84f3a6fc-fd2f-435a-be40-9ec57c48d2ef,silver,Referential integrity to client,warning,client_deposit.json,DEP006,Deposit references unknown client_id CL031.,2026-07-03T07:06:50Z
+4,84f3a6fc-fd2f-435a-be40-9ec57c48d2ef,silver,Financial validity,critical,deposits_vendor_20240301.csv,VDEP001,Completed deposit VDEP001 has a negative amount_usd.,2026-07-03T07:06:50Z
+5,84f3a6fc-fd2f-435a-be40-9ec57c48d2ef,silver,Referential integrity to client,warning,deposits_vendor_20240301.csv,VDEP003,Deposit references unknown client_id CL099.,2026-07-03T07:06:50Z
+6,84f3a6fc-fd2f-435a-be40-9ec57c48d2ef,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,,Mapped method to payment_method during standardization.,2026-07-03T07:06:50Z
+7,84f3a6fc-fd2f-435a-be40-9ec57c48d2ef,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,VDEP005,Mapped method to payment_method for deposit VDEP005.,2026-07-03T07:06:50Z
+8,84f3a6fc-fd2f-435a-be40-9ec57c48d2ef,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,VDEP006,Mapped method to payment_method for deposit VDEP006.,2026-07-03T07:06:50Z
+9,84f3a6fc-fd2f-435a-be40-9ec57c48d2ef,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,VDEP002,Mapped method to payment_method for deposit VDEP002.,2026-07-03T07:06:50Z
+10,84f3a6fc-fd2f-435a-be40-9ec57c48d2ef,silver,Deposit uniqueness,critical,deposits_vendor_20240302.csv,VDEP002,Duplicate deposit_id VDEP002 encountered after standardization.,2026-07-03T07:06:50Z
+11,84f3a6fc-fd2f-435a-be40-9ec57c48d2ef,silver,Deposit uniqueness,critical,deposits_vendor_20240303.csv,VDEP005,Duplicate deposit_id VDEP005 encountered after standardization.,2026-07-03T07:06:50Z
+12,84f3a6fc-fd2f-435a-be40-9ec57c48d2ef,gold,CDC baseline overlap,warning,client_profile_cdc.jsonl,CL030,CDC insert overlaps baseline snapshot for CL030; reconciled as upsert.,2026-07-03T07:06:50Z
+13,422c57d4-72b5-4d80-8261-6308863de336,silver,PII plausibility,warning,client_profile.json,CL012,Implausible date_of_birth detected for CL012: 1888-11-03,2026-07-03T07:07:20Z
+14,422c57d4-72b5-4d80-8261-6308863de336,silver,Baseline schema anomaly,warning,client_deposit.json,DEP004,Mapped credit_card to payment_method for deposit DEP004.,2026-07-03T07:07:20Z
+15,422c57d4-72b5-4d80-8261-6308863de336,silver,Referential integrity to client,warning,client_deposit.json,DEP006,Deposit references unknown client_id CL031.,2026-07-03T07:07:20Z
+16,422c57d4-72b5-4d80-8261-6308863de336,silver,Financial validity,critical,deposits_vendor_20240301.csv,VDEP001,Completed deposit VDEP001 has a negative amount_usd.,2026-07-03T07:07:20Z
+17,422c57d4-72b5-4d80-8261-6308863de336,silver,Referential integrity to client,warning,deposits_vendor_20240301.csv,VDEP003,Deposit references unknown client_id CL099.,2026-07-03T07:07:20Z
+18,422c57d4-72b5-4d80-8261-6308863de336,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,,Mapped method to payment_method during standardization.,2026-07-03T07:07:20Z
+19,422c57d4-72b5-4d80-8261-6308863de336,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,VDEP005,Mapped method to payment_method for deposit VDEP005.,2026-07-03T07:07:20Z
+20,422c57d4-72b5-4d80-8261-6308863de336,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,VDEP006,Mapped method to payment_method for deposit VDEP006.,2026-07-03T07:07:20Z
+21,422c57d4-72b5-4d80-8261-6308863de336,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,VDEP002,Mapped method to payment_method for deposit VDEP002.,2026-07-03T07:07:20Z
+22,422c57d4-72b5-4d80-8261-6308863de336,silver,Deposit uniqueness,critical,deposits_vendor_20240302.csv,VDEP002,Duplicate deposit_id VDEP002 encountered after standardization.,2026-07-03T07:07:20Z
+23,422c57d4-72b5-4d80-8261-6308863de336,silver,Deposit uniqueness,critical,deposits_vendor_20240303.csv,VDEP005,Duplicate deposit_id VDEP005 encountered after standardization.,2026-07-03T07:07:20Z
+24,422c57d4-72b5-4d80-8261-6308863de336,gold,CDC baseline overlap,warning,client_profile_cdc.jsonl,CL030,CDC insert overlaps baseline snapshot for CL030; reconciled as upsert.,2026-07-03T07:07:20Z
+25,7b645083-ffc5-4161-836e-ad72cc4fe659,silver,PII plausibility,warning,client_profile.json,CL012,Implausible date_of_birth detected for CL012: 1888-11-03,2026-07-03T07:15:28Z
+26,7b645083-ffc5-4161-836e-ad72cc4fe659,silver,Baseline schema anomaly,warning,client_deposit.json,DEP004,Mapped credit_card to payment_method for deposit DEP004.,2026-07-03T07:15:28Z
+27,7b645083-ffc5-4161-836e-ad72cc4fe659,silver,Referential integrity to client,warning,client_deposit.json,DEP006,Deposit references unknown client_id CL031.,2026-07-03T07:15:28Z
+28,7b645083-ffc5-4161-836e-ad72cc4fe659,silver,Financial validity,critical,deposits_vendor_20240301.csv,VDEP001,Completed deposit VDEP001 has a negative amount_usd.,2026-07-03T07:15:28Z
+29,7b645083-ffc5-4161-836e-ad72cc4fe659,silver,Referential integrity to client,warning,deposits_vendor_20240301.csv,VDEP003,Deposit references unknown client_id CL099.,2026-07-03T07:15:28Z
+30,7b645083-ffc5-4161-836e-ad72cc4fe659,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,,Mapped method to payment_method during standardization.,2026-07-03T07:15:28Z
+31,7b645083-ffc5-4161-836e-ad72cc4fe659,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,VDEP005,Mapped method to payment_method for deposit VDEP005.,2026-07-03T07:15:28Z
+32,7b645083-ffc5-4161-836e-ad72cc4fe659,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,VDEP006,Mapped method to payment_method for deposit VDEP006.,2026-07-03T07:15:28Z
+33,7b645083-ffc5-4161-836e-ad72cc4fe659,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,VDEP002,Mapped method to payment_method for deposit VDEP002.,2026-07-03T07:15:28Z
+34,7b645083-ffc5-4161-836e-ad72cc4fe659,silver,Deposit uniqueness,critical,deposits_vendor_20240302.csv,VDEP002,Duplicate deposit_id VDEP002 encountered after standardization.,2026-07-03T07:15:28Z
+35,7b645083-ffc5-4161-836e-ad72cc4fe659,silver,Deposit uniqueness,critical,deposits_vendor_20240303.csv,VDEP005,Duplicate deposit_id VDEP005 encountered after standardization.,2026-07-03T07:15:28Z
+36,7b645083-ffc5-4161-836e-ad72cc4fe659,gold,CDC baseline overlap,warning,client_profile_cdc.jsonl,CL030,CDC insert overlaps baseline snapshot for CL030; reconciled as upsert.,2026-07-03T07:15:28Z
+37,b45327a4-f2d6-429d-b778-cfd81452c199,silver,PII plausibility,warning,client_profile.json,CL012,Implausible date_of_birth detected for CL012: 1888-11-03,2026-07-03T07:15:41Z
+38,b45327a4-f2d6-429d-b778-cfd81452c199,silver,Baseline schema anomaly,warning,client_deposit.json,DEP004,Mapped credit_card to payment_method for deposit DEP004.,2026-07-03T07:15:41Z
+39,b45327a4-f2d6-429d-b778-cfd81452c199,silver,Referential integrity to client,warning,client_deposit.json,DEP006,Deposit references unknown client_id CL031.,2026-07-03T07:15:41Z
+40,b45327a4-f2d6-429d-b778-cfd81452c199,silver,Financial validity,critical,deposits_vendor_20240301.csv,VDEP001,Completed deposit VDEP001 has a negative amount_usd.,2026-07-03T07:15:41Z
+41,b45327a4-f2d6-429d-b778-cfd81452c199,silver,Referential integrity to client,warning,deposits_vendor_20240301.csv,VDEP003,Deposit references unknown client_id CL099.,2026-07-03T07:15:41Z
+42,b45327a4-f2d6-429d-b778-cfd81452c199,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,,Mapped method to payment_method during standardization.,2026-07-03T07:15:41Z
+43,b45327a4-f2d6-429d-b778-cfd81452c199,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,VDEP005,Mapped method to payment_method for deposit VDEP005.,2026-07-03T07:15:41Z
+44,b45327a4-f2d6-429d-b778-cfd81452c199,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,VDEP006,Mapped method to payment_method for deposit VDEP006.,2026-07-03T07:15:41Z
+45,b45327a4-f2d6-429d-b778-cfd81452c199,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,VDEP002,Mapped method to payment_method for deposit VDEP002.,2026-07-03T07:15:41Z
+46,b45327a4-f2d6-429d-b778-cfd81452c199,silver,Deposit uniqueness,critical,deposits_vendor_20240302.csv,VDEP002,Duplicate deposit_id VDEP002 encountered after standardization.,2026-07-03T07:15:41Z
+47,b45327a4-f2d6-429d-b778-cfd81452c199,silver,Deposit uniqueness,critical,deposits_vendor_20240303.csv,VDEP005,Duplicate deposit_id VDEP005 encountered after standardization.,2026-07-03T07:15:41Z
+48,b45327a4-f2d6-429d-b778-cfd81452c199,gold,CDC baseline overlap,warning,client_profile_cdc.jsonl,CL030,CDC insert overlaps baseline snapshot for CL030; reconciled as upsert.,2026-07-03T07:15:41Z
+49,25c21365-d630-45f7-9c1d-f7f5a18dbfac,silver,PII plausibility,warning,client_profile.json,CL012,Implausible date_of_birth detected for CL012: 1888-11-03,2026-07-03T07:18:36Z
+50,25c21365-d630-45f7-9c1d-f7f5a18dbfac,silver,Baseline schema anomaly,warning,client_deposit.json,DEP004,Mapped credit_card to payment_method for deposit DEP004.,2026-07-03T07:18:36Z
+51,25c21365-d630-45f7-9c1d-f7f5a18dbfac,silver,Referential integrity to client,warning,client_deposit.json,DEP006,Deposit references unknown client_id CL031.,2026-07-03T07:18:36Z
+52,25c21365-d630-45f7-9c1d-f7f5a18dbfac,silver,Financial validity,critical,deposits_vendor_20240301.csv,VDEP001,Completed deposit VDEP001 has a negative amount_usd.,2026-07-03T07:18:36Z
+53,25c21365-d630-45f7-9c1d-f7f5a18dbfac,silver,Referential integrity to client,warning,deposits_vendor_20240301.csv,VDEP003,Deposit references unknown client_id CL099.,2026-07-03T07:18:36Z
+54,25c21365-d630-45f7-9c1d-f7f5a18dbfac,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,,Mapped method to payment_method during standardization.,2026-07-03T07:18:36Z
+55,25c21365-d630-45f7-9c1d-f7f5a18dbfac,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,VDEP005,Mapped method to payment_method for deposit VDEP005.,2026-07-03T07:18:36Z
+56,25c21365-d630-45f7-9c1d-f7f5a18dbfac,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,VDEP006,Mapped method to payment_method for deposit VDEP006.,2026-07-03T07:18:36Z
+57,25c21365-d630-45f7-9c1d-f7f5a18dbfac,silver,Vendor schema conformance,warning,deposits_vendor_20240302.csv,VDEP002,Mapped method to payment_method for deposit VDEP002.,2026-07-03T07:18:36Z
+58,25c21365-d630-45f7-9c1d-f7f5a18dbfac,silver,Deposit uniqueness,critical,deposits_vendor_20240302.csv,VDEP002,Duplicate deposit_id VDEP002 encountered after standardization.,2026-07-03T07:18:36Z
+59,25c21365-d630-45f7-9c1d-f7f5a18dbfac,silver,Deposit uniqueness,critical,deposits_vendor_20240303.csv,VDEP005,Duplicate deposit_id VDEP005 encountered after standardization.,2026-07-03T07:18:36Z
+60,25c21365-d630-45f7-9c1d-f7f5a18dbfac,gold,CDC baseline overlap,warning,client_profile_cdc.jsonl,CL030,CDC insert overlaps baseline snapshot for CL030; reconciled as upsert.,2026-07-03T07:18:36Z

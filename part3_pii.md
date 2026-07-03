@@ -39,10 +39,12 @@ Minimum controls for the current setup:
 
 - OS-level file permissions on bronze and restricted silver folders
 - separate runtime or service account for pipeline execution
-- no raw PII committed to Git
+- for real production data, no raw PII committed to Git
 - masked fields only in analytic outputs
 
 These controls are enough for a demo-style local design, but they are not a strong long-term security boundary.
+
+For this interview repo specifically, the sample source files are synthetic fixtures and may be versioned for reproducibility. That exception should not be carried over to real source data.
 
 ## Recommended access-control method
 

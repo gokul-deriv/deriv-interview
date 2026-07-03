@@ -1,0 +1,7 @@
+{"lsn": 1003, "op": "update", "client_id": "CL001", "effective_at": "2024-03-05T09:10:00Z", "risk_category": "medium", "account_status": "active", "account_balance_usd": 150.25}
+{"lsn": 1001, "op": "insert", "client_id": "CL030", "effective_at": "2024-06-12T08:00:00Z", "risk_category": "medium", "account_status": "active", "account_balance_usd": 25.0}
+{"lsn": 1004, "op": "update", "client_id": "CL005", "effective_at": "2024-03-06T11:30:00Z", "risk_category": "high", "account_status": "under_review", "account_balance_usd": 850.0}
+{"lsn": 1002, "op": "update", "client_id": "CL012", "effective_at": "2024-03-04T14:00:00Z", "risk_category": "high", "account_status": "restricted", "account_balance_usd": 0.0}
+{"lsn": 1006, "op": "update", "client_id": "CL026", "effective_at": "2024-05-20T10:00:00Z", "risk_category": "medium", "account_status": "active", "account_balance_usd": 95.0}
+{"lsn": 1005, "op": "update", "client_id": "CL014", "effective_at": "2024-03-10T12:00:00Z", "risk_category": "low", "account_status": "active", "account_balance_usd": 640.0}
+{"lsn": 1007, "op": "delete", "client_id": "CL003", "effective_at": "2024-06-01T09:00:00Z", "risk_category": "medium", "account_status": "deleted", "account_balance_usd": 0.0}

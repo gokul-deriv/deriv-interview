@@ -1,0 +1,6 @@
+run_id,job_name,started_at,ended_at,status,error_message
+84f3a6fc-fd2f-435a-be40-9ec57c48d2ef,all,2026-07-03T07:06:50Z,2026-07-03T07:06:50Z,success,
+422c57d4-72b5-4d80-8261-6308863de336,all,2026-07-03T07:07:20Z,2026-07-03T07:07:20Z,success,
+7b645083-ffc5-4161-836e-ad72cc4fe659,all,2026-07-03T07:15:28Z,2026-07-03T07:15:28Z,success,
+b45327a4-f2d6-429d-b778-cfd81452c199,all,2026-07-03T07:15:41Z,2026-07-03T07:15:41Z,success,
+25c21365-d630-45f7-9c1d-f7f5a18dbfac,all,2026-07-03T07:18:36Z,,running,

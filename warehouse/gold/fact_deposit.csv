@@ -1,0 +1,12 @@
+deposit_id,client_id,deposit_date,amount_usd,fee_usd,payment_method,processing_days,deposit_status,source_system,source_file_name
+DEP001,CL001,2024-01-06,100.0,2.5,bank_transfer,1,completed,baseline_deposit,client_deposit.json
+DEP002,CL002,2024-01-10,250.0,3.5,credit_card,1,completed,baseline_deposit,client_deposit.json
+DEP003,CL005,2024-01-25,500.0,6.0,bank_transfer,2,completed,baseline_deposit,client_deposit.json
+DEP004,CL014,2024-03-02,300.0,4.0,credit_card,1,completed,baseline_deposit,client_deposit.json
+DEP005,CL018,2024-03-29,180.0,2.0,ewallet,1,completed,baseline_deposit,client_deposit.json
+VDEP002,CL008,2024-03-01,220.0,3.2,credit_card,2,completed,vendor_deposit,deposits_vendor_20240301.csv
+VDEP004,CL010,2024-03-01,90.0,1.5,bank_transfer,3,pending,vendor_deposit,deposits_vendor_20240301.csv
+VDEP005,CL014,2024-03-02,300.0,4.0,credit_card,1,completed,vendor_deposit,deposits_vendor_20240302.csv
+VDEP006,CL015,2024-03-02,450.0,5.0,bank_transfer,2,completed,vendor_deposit,deposits_vendor_20240302.csv
+VDEP007,CL017,2024-02-28,125.0,2.0,bank_transfer,4,completed,vendor_deposit,deposits_vendor_20240303.csv
+VDEP008,CL021,2024-03-01,75.0,1.0,ewallet,1,completed,vendor_deposit,deposits_vendor_20240303.csv

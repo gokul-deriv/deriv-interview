@@ -1,0 +1,7 @@
+deposit_id,client_id,deposit_date,amount_usd,fee_usd,payment_method,processing_days,status,source_file_name,source_row_number,row_hash
+VDEP002,CL008,2024-03-01,220.0,3.2,credit_card,2,completed,deposits_vendor_20240301.csv,2,edb0fc4ef0ec66003e3adce3d522834815f275e4c8c104e37f9a99799c2c40e9
+VDEP004,CL010,2024-03-01,90.0,1.5,bank_transfer,3,pending,deposits_vendor_20240301.csv,4,27f2c5d1c6404fe49b3e641589cf99f37bc9ebffff1a6779d442a07781b8f33a
+VDEP005,CL014,2024-03-02,300.0,4.0,credit_card,1,completed,deposits_vendor_20240302.csv,1,1d3669726a5d7fa4be0e3af87767bdb385ecc48f5cbf48a1417e19e153449b08
+VDEP006,CL015,2024-03-02,450.0,5.0,bank_transfer,2,completed,deposits_vendor_20240302.csv,2,89e9ba48f7d736983ec804c9c8881da653a9570ed9ca72b40d7fcedfd7a5ff6a
+VDEP007,CL017,2024-02-28,125.0,2.0,bank_transfer,4,completed,deposits_vendor_20240303.csv,1,2d768cef31a54d140c36210a6c71caee4753fe922b4c5eb34ae84014743ac916
+VDEP008,CL021,2024-03-01,75.0,1.0,ewallet,1,completed,deposits_vendor_20240303.csv,3,615f554c787c5825f11f00cd32b1acbb230dfbf29a3adbada99d4a797cf61adb

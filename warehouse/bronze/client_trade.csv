@@ -1,0 +1,8 @@
+trade_id,client_id,trade_date,instrument,volume_lots,realized_pnl_usd,status,source_system,source_file_name,source_file_sha256,load_timestamp,row_number
+TR001,CL001,2024-01-07,EURUSD,1.2,14.5,closed,baseline_trade,client_trade.json,d417c75ce4ab934cdb87fdd7dd6a883bb9ea6862596991b8276ce27ee55ec027,2026-07-03T07:15:28Z,1
+TR002,CL002,2024-01-12,XAUUSD,0.5,-20.0,closed,baseline_trade,client_trade.json,d417c75ce4ab934cdb87fdd7dd6a883bb9ea6862596991b8276ce27ee55ec027,2026-07-03T07:15:28Z,2
+TR003,CL005,2024-01-27,BTCUSD,0.1,60.0,closed,baseline_trade,client_trade.json,d417c75ce4ab934cdb87fdd7dd6a883bb9ea6862596991b8276ce27ee55ec027,2026-07-03T07:15:28Z,3
+TR004,CL014,2024-03-04,US30,2.0,-15.25,closed,baseline_trade,client_trade.json,d417c75ce4ab934cdb87fdd7dd6a883bb9ea6862596991b8276ce27ee55ec027,2026-07-03T07:15:28Z,4
+TR005,CL018,2024-03-28,EURUSD,1.0,22.75,closed,baseline_trade,client_trade.json,d417c75ce4ab934cdb87fdd7dd6a883bb9ea6862596991b8276ce27ee55ec027,2026-07-03T07:15:28Z,5
+TR006,CL020,2024-04-12,BTCUSD,0.2,35.0,closed,baseline_trade,client_trade.json,d417c75ce4ab934cdb87fdd7dd6a883bb9ea6862596991b8276ce27ee55ec027,2026-07-03T07:15:28Z,6
+TR007,CL026,2024-05-16,USDJPY,0.8,-5.5,closed,baseline_trade,client_trade.json,d417c75ce4ab934cdb87fdd7dd6a883bb9ea6862596991b8276ce27ee55ec027,2026-07-03T07:15:28Z,7

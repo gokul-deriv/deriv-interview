@@ -1,0 +1,8 @@
+trade_id,client_id,trade_date,instrument,volume_lots,realized_pnl_usd,trade_status,source_file_name
+TR001,CL001,2024-01-07,EURUSD,1.2,14.5,closed,client_trade.json
+TR002,CL002,2024-01-12,XAUUSD,0.5,-20.0,closed,client_trade.json
+TR003,CL005,2024-01-27,BTCUSD,0.1,60.0,closed,client_trade.json
+TR004,CL014,2024-03-04,US30,2.0,-15.25,closed,client_trade.json
+TR005,CL018,2024-03-28,EURUSD,1.0,22.75,closed,client_trade.json
+TR006,CL020,2024-04-12,BTCUSD,0.2,35.0,closed,client_trade.json
+TR007,CL026,2024-05-16,USDJPY,0.8,-5.5,closed,client_trade.json

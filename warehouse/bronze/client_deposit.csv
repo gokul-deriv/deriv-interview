@@ -1,0 +1,7 @@
+deposit_id,client_id,deposit_date,amount_usd,fee_usd,payment_method,credit_card,processing_days,status,source_system,source_file_name,source_file_sha256,load_timestamp,row_number
+DEP001,CL001,2024-01-06,100.0,2.5,bank_transfer,,1,completed,baseline_deposit,client_deposit.json,db38dbb6f0674b9e1b6dbadb54e48ec80f3638998aea99692f3a4e51c981c738,2026-07-03T07:15:28Z,1
+DEP002,CL002,2024-01-10,250.0,3.5,credit_card,,1,completed,baseline_deposit,client_deposit.json,db38dbb6f0674b9e1b6dbadb54e48ec80f3638998aea99692f3a4e51c981c738,2026-07-03T07:15:28Z,2
+DEP003,CL005,2024-01-25,500.0,6.0,bank_transfer,,2,completed,baseline_deposit,client_deposit.json,db38dbb6f0674b9e1b6dbadb54e48ec80f3638998aea99692f3a4e51c981c738,2026-07-03T07:15:28Z,3
+DEP004,CL014,2024-03-02,300.0,4.0,,credit_card,1,completed,baseline_deposit,client_deposit.json,db38dbb6f0674b9e1b6dbadb54e48ec80f3638998aea99692f3a4e51c981c738,2026-07-03T07:15:28Z,4
+DEP005,CL018,2024-03-29,180.0,2.0,ewallet,,1,completed,baseline_deposit,client_deposit.json,db38dbb6f0674b9e1b6dbadb54e48ec80f3638998aea99692f3a4e51c981c738,2026-07-03T07:15:28Z,5
+DEP006,CL031,2024-02-02,120.0,1.5,bank_transfer,,2,completed,baseline_deposit,client_deposit.json,db38dbb6f0674b9e1b6dbadb54e48ec80f3638998aea99692f3a4e51c981c738,2026-07-03T07:15:28Z,6

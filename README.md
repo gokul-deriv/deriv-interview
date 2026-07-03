@@ -13,7 +13,8 @@ This submission stays intentionally lightweight and self-contained. It uses Mark
 - Markdown + Mermaid
 
 It now also includes a runnable local warehouse implementation backed by SQLite and raw source files under `data/`.
-The project is initialized as a local git repository for GitHub repo `gokul-deriv/deriv-interview`, and [.gitignore](/Users/gokulsubramanian/nrs/git/regentmarkets/deriv-interview-gokul/.gitignore) keeps raw source data, generated warehouse artifacts, and common secret file types out of version control.
+The project is initialized as a local git repository for GitHub repo `gokul-deriv/deriv-interview`, and [.gitignore](/Users/gokulsubramanian/nrs/git/regentmarkets/deriv-interview-gokul/.gitignore) keeps the SQLite database, cache artifacts, and common secret file types out of version control.
+The sample source files and exported layer CSVs in this repo are intentionally versioned for interview reproducibility. `warehouse.db`, cache artifacts, and secret-like files remain ignored.
 
 ## Deliverables
 
@@ -26,7 +27,7 @@ The project is initialized as a local git repository for GitHub repo `gokul-deri
 - `scripts/validate_sqlite.sh`: local validation script
 - `data/`: raw baseline JSON, vendor CSV, and CDC JSONL inputs
 - `warehouse/`: runnable pipeline, persistent SQLite warehouse, and exported layer outputs
-- `.gitignore`: prevents raw source files, generated outputs, and common secrets from being committed
+- `.gitignore`: keeps the SQLite database, caches, and common secret file types out of version control
 - `PROMPTS.md`: prompt history and decision log
 
 ## Design commitments
@@ -86,6 +87,7 @@ This materializes:
 CSV exports are written under `warehouse/bronze`, `warehouse/silver`, `warehouse/gold`, `warehouse/curated`, and `warehouse/ops`.
 The bronze folder now follows the source names directly, for example `client_profile.csv`, `client_deposit.csv`, `client_trade.csv`, and one CSV per vendor delivery file.
 Silver and all downstream layers keep masked or derived PII only. Raw PII stays confined to `data/` and bronze.
+The `data/` and bronze files in this repo are sample interview fixtures and are versioned intentionally; the SQLite database file remains untracked.
 
 ## Quick SQL Validation
 

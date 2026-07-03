@@ -1,0 +1,8 @@
+lsn,op,client_id,effective_at,risk_category,account_status,account_balance_usd,source_system,source_file_name,source_file_sha256,load_timestamp,row_number
+1003,update,CL001,2024-03-05T09:10:00Z,medium,active,150.25,client_cdc,client_profile_cdc.jsonl,1de4f933b8ee652b87ec56cc150b28dcdc8a13b6d221804b35315fe0a1af7397,2026-07-03T07:15:28Z,1
+1001,insert,CL030,2024-06-12T08:00:00Z,medium,active,25.0,client_cdc,client_profile_cdc.jsonl,1de4f933b8ee652b87ec56cc150b28dcdc8a13b6d221804b35315fe0a1af7397,2026-07-03T07:15:28Z,2
+1004,update,CL005,2024-03-06T11:30:00Z,high,under_review,850.0,client_cdc,client_profile_cdc.jsonl,1de4f933b8ee652b87ec56cc150b28dcdc8a13b6d221804b35315fe0a1af7397,2026-07-03T07:15:28Z,3
+1002,update,CL012,2024-03-04T14:00:00Z,high,restricted,0.0,client_cdc,client_profile_cdc.jsonl,1de4f933b8ee652b87ec56cc150b28dcdc8a13b6d221804b35315fe0a1af7397,2026-07-03T07:15:28Z,4
+1006,update,CL026,2024-05-20T10:00:00Z,medium,active,95.0,client_cdc,client_profile_cdc.jsonl,1de4f933b8ee652b87ec56cc150b28dcdc8a13b6d221804b35315fe0a1af7397,2026-07-03T07:15:28Z,5
+1005,update,CL014,2024-03-10T12:00:00Z,low,active,640.0,client_cdc,client_profile_cdc.jsonl,1de4f933b8ee652b87ec56cc150b28dcdc8a13b6d221804b35315fe0a1af7397,2026-07-03T07:15:28Z,6
+1007,delete,CL003,2024-06-01T09:00:00Z,medium,deleted,0.0,client_cdc,client_profile_cdc.jsonl,1de4f933b8ee652b87ec56cc150b28dcdc8a13b6d221804b35315fe0a1af7397,2026-07-03T07:15:28Z,7

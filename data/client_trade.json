@@ -1,0 +1,65 @@
+[
+    {
+        "trade_id": "TR001",
+        "client_id": "CL001",
+        "trade_date": "2024-01-07",
+        "instrument": "EURUSD",
+        "volume_lots": 1.2,
+        "realized_pnl_usd": 14.5,
+        "status": "closed"
+    },
+    {
+        "trade_id": "TR002",
+        "client_id": "CL002",
+        "trade_date": "2024-01-12",
+        "instrument": "XAUUSD",
+        "volume_lots": 0.5,
+        "realized_pnl_usd": -20.0,
+        "status": "closed"
+    },
+    {
+        "trade_id": "TR003",
+        "client_id": "CL005",
+        "trade_date": "2024-01-27",
+        "instrument": "BTCUSD",
+        "volume_lots": 0.1,
+        "realized_pnl_usd": 60.0,
+        "status": "closed"
+    },
+    {
+        "trade_id": "TR004",
+        "client_id": "CL014",
+        "trade_date": "2024-03-04",
+        "instrument": "US30",
+        "volume_lots": 2.0,
+        "realized_pnl_usd": -15.25,
+        "status": "closed"
+    },
+    {
+        "trade_id": "TR005",
+        "client_id": "CL018",
+        "trade_date": "2024-03-28",
+        "instrument": "EURUSD",
+        "volume_lots": 1.0,
+        "realized_pnl_usd": 22.75,
+        "status": "closed"
+    },
+    {
+        "trade_id": "TR006",
+        "client_id": "CL020",
+        "trade_date": "2024-04-12",
+        "instrument": "BTCUSD",
+        "volume_lots": 0.2,
+        "realized_pnl_usd": 35.0,
+        "status": "closed"
+    },
+    {
+        "trade_id": "TR007",
+        "client_id": "CL026",
+        "trade_date": "2024-05-16",
+        "instrument": "USDJPY",
+        "volume_lots": 0.8,
+        "realized_pnl_usd": -5.5,
+        "status": "closed"
+    }
+]

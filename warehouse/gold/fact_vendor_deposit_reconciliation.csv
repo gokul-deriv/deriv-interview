@@ -1,0 +1,7 @@
+reconciliation_row_id,reconciliation_run_id,deposit_id,client_id,reconciliation_status,variance_amount_usd,source_file_name,reconciled_at
+25,25c21365-d630-45f7-9c1d-f7f5a18dbfac,VDEP002,CL008,matched_to_fact,0.0,deposits_vendor_20240301.csv,2026-07-03T07:18:36Z
+26,25c21365-d630-45f7-9c1d-f7f5a18dbfac,VDEP004,CL010,matched_to_fact,0.0,deposits_vendor_20240301.csv,2026-07-03T07:18:36Z
+27,25c21365-d630-45f7-9c1d-f7f5a18dbfac,VDEP005,CL014,matched_to_fact,0.0,deposits_vendor_20240302.csv,2026-07-03T07:18:36Z
+28,25c21365-d630-45f7-9c1d-f7f5a18dbfac,VDEP006,CL015,matched_to_fact,0.0,deposits_vendor_20240302.csv,2026-07-03T07:18:36Z
+29,25c21365-d630-45f7-9c1d-f7f5a18dbfac,VDEP007,CL017,matched_to_fact,0.0,deposits_vendor_20240303.csv,2026-07-03T07:18:36Z
+30,25c21365-d630-45f7-9c1d-f7f5a18dbfac,VDEP008,CL021,matched_to_fact,0.0,deposits_vendor_20240303.csv,2026-07-03T07:18:36Z

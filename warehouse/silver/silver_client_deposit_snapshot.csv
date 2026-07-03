@@ -1,0 +1,6 @@
+deposit_id,client_id,deposit_date,amount_usd,fee_usd,payment_method,processing_days,status,source_file_name,source_row_number,row_hash
+DEP001,CL001,2024-01-06,100.0,2.5,bank_transfer,1,completed,client_deposit.json,1,b7ada9ddadcebc8d6b030cc00e901522f5be80c4370aaddf1ab5f81e16a86e63
+DEP002,CL002,2024-01-10,250.0,3.5,credit_card,1,completed,client_deposit.json,2,d993cc683b95ac49dcf1c10509d389716abbb1bd057d353c38e2949cc93ee408
+DEP003,CL005,2024-01-25,500.0,6.0,bank_transfer,2,completed,client_deposit.json,3,794d1c2cbe35fc6bb4a1644652301c2fe19c2b23b2e0e7df512cc4b0dddd9618
+DEP004,CL014,2024-03-02,300.0,4.0,credit_card,1,completed,client_deposit.json,4,5ed248f0fb45d43029dfed36090575f42be6576a654adf30f80a8ac4e9b282a9
+DEP005,CL018,2024-03-29,180.0,2.0,ewallet,1,completed,client_deposit.json,5,60f243466a186159cc5d94f818f1ef1376c27f102e25611c58818d7c04cd8c8a

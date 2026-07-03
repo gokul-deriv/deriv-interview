@@ -1,0 +1,24 @@
+# Local env and editor noise
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.crt
+
+# Raw source data contains source PII and should stay local
+/data/*.json
+/data/*.jsonl
+/data/*.csv
+
+# Generated warehouse artifacts
+/warehouse/warehouse.db
+/warehouse/bronze/*.csv
+/warehouse/silver/*.csv
+/warehouse/gold/*.csv
+/warehouse/curated/*.csv
+/warehouse/ops/*.csv
+/warehouse/pipelines/__pycache__/

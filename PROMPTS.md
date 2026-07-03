@@ -1,0 +1,14 @@
+# Prompt History
+
+This file is maintained manually from the conversation and plan, rather than relying on a product-level export.
+
+| Prompt or paraphrase | Why it was asked | What changed or was decided |
+|---|---|---|
+| Build the submission as a new local repo folder named `deriv-interview-gokul`. | The work needed to stay isolated from the existing RegentMarkets repositories. | The deliverable was made fully self-contained in one new local folder with its own docs, SQL, and validation script. |
+| Use a strict four-layer design: `bronze -> silver -> gold -> curated`. | The user wanted the warehouse structure to be explicit and easy to evaluate. | All documentation and SQL were organized around those four layers, and each layer has a clear responsibility. |
+| Keep the solution local-only and tool-light: `python3`, `sqlite3`, `shasum -a 256`, `cron`, Markdown, Mermaid. | The interview scope excluded cloud tooling and favored practical local operations. | The submission avoided dbt, Dataform, and cloud dependencies; the validation path is SQLite-compatible and the orchestration design uses `cron` plus a small runner. |
+| Make the gold layer Kimball-style and produce one curated aggregate model called `client_activity`. | The user wanted an analytic model, not a generic landing-zone design. | `part2_data_model.md` defines conformed dimensions and facts, and `sql/client_activity.sql` materializes the curated aggregate locally. |
+| Exclude `total_withdrawals` for now because no withdrawal source exists. | The user wanted scope discipline and explicit handling of missing source coverage. | The curated model includes deposits and trades only, and the docs state that withdrawals are a future enhancement. |
+| Document concrete DQ checks, monitoring, and edge cases tied to the sample anomalies. | The deliverable needed operational realism, not only a conceptual star schema. | `part1_pipeline.md` includes the DQ table, SLA handling, quarantine behavior, duplicate and orphan scenarios, and CDC overlap examples such as `CL030`, `CL031`, `CL099`, `VDEP001`, `VDEP002`, and `VDEP005`. |
+| Keep Query A SQLite-compatible and make sure zero-deposit countries remain in the result. | The SQL needed to be locally executable and semantically correct for outer-join behavior. | `sql/query_a_deposit_count_by_country.sql` uses a `LEFT JOIN` and sorts zero-deposit countries first, with a fixture and validation script to prove the output. |
+| Explain where PII masking should happen and how access control should work in a local setup. | The solution needed a direct answer to the PII design question, including present-state and recommended-state controls. | `part3_pii.md` places masking in `silver`, limits raw PII to bronze or restricted silver, and recommends a restricted local PostgreSQL schema for stronger access control. |
